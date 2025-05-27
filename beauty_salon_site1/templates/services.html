@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Услуги — Салон Клеопатра{% endblock %}
+{% block content %}
+<h1>Наши услуги</h1>
+<div class="services-list">
+    <a href="{{ url_for('service_detail', service='hair') }}" class="service-button">Парикмахерские услуги</a>
+    <a href="{{ url_for('service_detail', service='nails') }}" class="service-button">Маникюр и педикюр</a>
+    <a href="{{ url_for('service_detail', service='makeup') }}" class="service-button">Макияж и визаж</a>
+    <a href="{{ url_for('service_detail', service='spa') }}" class="service-button">СПА-процедуры</a>
+    <a href="{{ url_for('service_detail', service='cosmetology') }}" class="service-button">Косметология</a>
+</div>
+{% endblock %}
+
+
+
